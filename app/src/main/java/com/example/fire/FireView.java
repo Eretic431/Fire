@@ -11,7 +11,6 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class FireView extends View {
 
@@ -73,7 +72,6 @@ public class FireView extends View {
         System.out.println(w + " " + h);
         fireWidth = 200;
         fireHeight = (int) (fireWidth / ratio);
-        System.out.println(fireHeight + " " + ratio);
         bitmap = Bitmap.createBitmap(fireWidth, fireHeight, Bitmap.Config.RGB_565);
         firePixels = new int[fireWidth * fireHeight];
         for (int x = 0; x < fireWidth; x++) {
